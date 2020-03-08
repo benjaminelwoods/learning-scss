@@ -1,0 +1,72 @@
+@import 'nav';
+@import 'variables';
+@import 'mixins';
+
+//
+
+body {
+  background-color: $redColour;
+  @include clear;
+}
+
+.paragraph {
+  color: complement($redColour);
+  @include clear;
+}
+
+// a:hover {
+//   color: $redColour;
+// }
+
+a {
+    &:hover {
+        color: darken($redColour, 65%);
+    }
+    &::after {
+        clear: both;
+    }
+}
+
+.card {
+      background-color: white;
+      border: 2px solid $redColour;
+
+        .cardBody {
+            color: $redColour;
+            text-align: center;
+
+            .cardTitle {
+                font-style: 2em;
+
+                    img {
+                        max-width: 50px;
+                    }
+            }
+        }
+}
+
+// Mixins
+
+// .div1 {
+//     border: 10px solid black;
+//     float: left;
+//     text-align: center;
+//     color: red;
+// }
+//
+// .div2 {
+//     border: 10px solid black;
+//     float: left;
+//     text-align: center;
+//     color: blue;
+// }
+
+.div1 {
+    @include divStyle;
+    color: red;
+}
+
+.div2 {
+    @include divStyle;
+    color: blue;
+}

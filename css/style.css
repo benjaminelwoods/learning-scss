@@ -1,0 +1,84 @@
+/* line 1, ../sass/_nav.scss */
+nav {
+  color: red;
+}
+/* line 3, ../sass/_nav.scss */
+nav ul {
+  list-style: none;
+}
+/* line 5, ../sass/_nav.scss */
+nav ul li {
+  float: right;
+}
+/* line 7, ../sass/_nav.scss */
+nav ul li a {
+  color: white;
+}
+
+/* line 7, ../sass/style.scss */
+body {
+  background-color: #c0392b;
+}
+/* line 14, ../sass/_mixins.scss */
+body::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+
+/* line 12, ../sass/style.scss */
+.paragraph {
+  color: #2bb2c0;
+}
+/* line 14, ../sass/_mixins.scss */
+.paragraph::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+
+/* line 22, ../sass/style.scss */
+a:hover {
+  color: black;
+}
+/* line 25, ../sass/style.scss */
+a::after {
+  clear: both;
+}
+
+/* line 30, ../sass/style.scss */
+.card {
+  background-color: white;
+  border: 2px solid #c0392b;
+}
+/* line 34, ../sass/style.scss */
+.card .cardBody {
+  color: #c0392b;
+  text-align: center;
+}
+/* line 38, ../sass/style.scss */
+.card .cardBody .cardTitle {
+  font-style: 2em;
+}
+/* line 41, ../sass/style.scss */
+.card .cardBody .cardTitle img {
+  max-width: 50px;
+}
+
+/* line 64, ../sass/style.scss */
+.div1 {
+  border: 10px solid black;
+  float: left;
+  text-align: center;
+  color: red;
+}
+
+/* line 69, ../sass/style.scss */
+.div2 {
+  border: 10px solid black;
+  float: left;
+  text-align: center;
+  color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */
